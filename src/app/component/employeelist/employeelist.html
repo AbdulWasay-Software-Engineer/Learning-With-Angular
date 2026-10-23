@@ -1,0 +1,264 @@
+
+<div class="employee-page">
+
+  <div class="employee-card">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div>
+        <span class="page-label">EMPLOYEE MANAGEMENT</span>
+        <h2>Employee List</h2>
+        <p>Manage and view all your employees in one place.</p>
+      </div>
+
+      <button type="button" class="add-btn">
+        <span class="plus-icon">+</span>
+        Add Employee
+      </button>
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <div class="stat-icon total-icon">👥</div>
+        <div>
+          <p>Total Employees</p>
+          <h3>248</h3>
+          <span class="stat-note">All employees</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon active-icon">✓</div>
+        <div>
+          <p>Active Employees</p>
+          <h3>216</h3>
+          <span class="stat-note">Currently working</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon inactive-icon">◷</div>
+        <div>
+          <p>On Leave</p>
+          <h3>18</h3>
+          <span class="stat-note">Currently on leave</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon department-icon">▦</div>
+        <div>
+          <p>Departments</p>
+          <h3>08</h3>
+          <span class="stat-note">Across organization</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Employee Table Section -->
+    <div class="list-section">
+
+      <div class="list-heading">
+        <div>
+          <h3>All Employees</h3>
+          <p>A complete list of registered employees.</p>
+        </div>
+
+        <span class="employee-count">248 Employees</span>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="toolbar">
+
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input
+            type="search"
+            placeholder="Search by name, ID or email..."
+            aria-label="Search employees">
+        </div>
+
+        <select aria-label="Filter by department">
+          <option value="">All Departments</option>
+          <option>IT &amp; Development</option>
+          <option>Human Resources</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+          <option>Sales</option>
+        </select>
+
+        <select aria-label="Filter by status">
+          <option value="">All Status</option>
+          <option>Active</option>
+          <option>On Leave</option>
+          <option>Inactive</option>
+        </select>
+
+      </div>
+
+      <!-- Employee Table -->
+      <div class="table-wrapper">
+        <table class="employee-table">
+
+          <thead>
+            <tr>
+              <th>EMPLOYEE</th>
+              <th>EMPLOYEE ID</th>
+              <th>DEPARTMENT</th>
+              <th>DESIGNATION</th>
+              <th>JOINING DATE</th>
+              <th>STATUS</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-purple">AK</div>
+                  <div class="employee-details">
+                    <strong>Ahmed Khan</strong>
+                    <span>ahmed@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-001</span></td>
+              <td>IT &amp; Development</td>
+              <td>Software Engineer</td>
+              <td>12 Jan, 2024</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Ahmed Khan">⋮</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-pink">SF</div>
+                  <div class="employee-details">
+                    <strong>Sara Fatima</strong>
+                    <span>sara@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-002</span></td>
+              <td>Human Resources</td>
+              <td>HR Manager</td>
+              <td>05 Mar, 2023</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Sara Fatima">⋮</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-green">UM</div>
+                  <div class="employee-details">
+                    <strong>Usman Malik</strong>
+                    <span>usman@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-003</span></td>
+              <td>Finance</td>
+              <td>Accountant</td>
+              <td>18 Jun, 2024</td>
+              <td><span class="status status-leave">On Leave</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Usman Malik">⋮</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-orange">AM</div>
+                  <div class="employee-details">
+                    <strong>Ayesha Malik</strong>
+                    <span>ayesha@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-004</span></td>
+              <td>Marketing</td>
+              <td>Marketing Executive</td>
+              <td>22 Aug, 2023</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Ayesha Malik">⋮</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-blue">HB</div>
+                  <div class="employee-details">
+                    <strong>Hamza Butt</strong>
+                    <span>hamza@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-005</span></td>
+              <td>Sales</td>
+              <td>Sales Executive</td>
+              <td>10 Feb, 2025</td>
+              <td><span class="status status-inactive">Inactive</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Hamza Butt">⋮</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="employee-info">
+                  <div class="avatar avatar-teal">ZA</div>
+                  <div class="employee-details">
+                    <strong>Zain Ali</strong>
+                    <span>zain@company.com</span>
+                  </div>
+                </div>
+              </td>
+              <td><span class="emp-id">EMP-006</span></td>
+              <td>IT &amp; Development</td>
+              <td>UI/UX Designer</td>
+              <td>01 Apr, 2025</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>
+                <button type="button" class="action-btn" aria-label="More actions for Zain Ali">⋮</button>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+      <!-- Pagination UI -->
+      <div class="pagination">
+
+        <p>Showing <strong>1–6</strong> of <strong>248</strong> employees</p>
+
+        <div class="pagination-buttons">
+          <button type="button" class="page-btn" disabled>←</button>
+          <button type="button" class="page-btn selected">1</button>
+          <button type="button" class="page-btn">2</button>
+          <button type="button" class="page-btn">3</button>
+          <span class="dots">...</span>
+          <button type="button" class="page-btn">42</button>
+          <button type="button" class="page-btn">→</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
