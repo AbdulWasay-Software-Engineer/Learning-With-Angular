@@ -1,0 +1,114 @@
+
+<div class="binding-page">
+  <header class="page-header">
+    <span class="subtitle">ANGULAR LEARNING</span>
+    <h1>Data Binding</h1>
+    <p>Learn how Angular connects your component with the user interface.</p>
+  </header>
+
+  <div class="binding-grid">
+
+    <!-- Interpolation -->
+    <section class="binding-card">
+      <div class="card-icon">01</div>
+      <h3>Interpolation</h3>
+      <p class="description">
+        Display component values using double curly braces.
+      </p>
+
+      <div class="input-group">
+        <label>Favorite Course</label>
+        <input
+          [type]="inputType"
+          name="courseName"
+          [value]="courseName"
+          readonly
+        />
+      </div>
+
+      <div class="course-result">
+        <span>Your selected course</span>
+        <h4>{{ courseName }}</h4>
+      </div>
+
+      <div class="image-wrapper">
+        <img [src]="imgUrl" alt="Course image" />
+      </div>
+
+      <p class="course-text">
+        My course name is <strong>{{ courseName }}</strong>
+      </p>
+    </section>
+
+    <!-- Property Binding -->
+    <section class="binding-card">
+      <div class="card-icon">02</div>
+      <h3>Property Binding</h3>
+      <p class="description">
+        Bind component properties directly to HTML elements.
+      </p>
+
+      <div class="image-wrapper property-image">
+        <img [src]="imgUrl" alt="Course image" />
+      </div>
+
+      <div class="code-label">
+        <span class="status-dot"></span>
+        Image source connected using [src]
+      </div>
+    </section>
+
+    <!-- Event Binding -->
+    <section class="binding-card event-card">
+      <div class="card-icon">03</div>
+      <h3>Event Binding</h3>
+      <p class="description">
+        Click the buttons to execute component functions.
+      </p>
+
+      <div class="button-group">
+        <button
+          class="btn btn-primary"
+          (click)="sayHello('Abdul Wasay')"
+        >
+          <span>👋</span> Say Hello
+        </button>
+
+        <button
+          class="btn btn-secondary"
+          (click)="changeCourse('TypeScript')"
+        >
+          Change Course
+          <span>→</span>
+        </button>
+      </div>
+
+      <div class="course-result">
+        <span>Current course</span>
+        <h4>{{ courseName }}</h4>
+      </div>
+    </section>
+
+  </div>
+  <!-- Event Binding -->
+<section class="binding-card">
+    <h4>Two Way Data Binding</h4>
+
+    <label>Course Name</label>
+    <input
+        type="text"
+        [(ngModel)]="courseName"
+       
+    />
+
+    <div class="preview">
+        <span>Live Preview</span>
+        <h3>{{ courseName || 'Your course name appears here' }}</h3>
+    </div>
+</section>
+
+  <footer class="page-footer">
+    Built with Angular <span>♥</span> Data Binding Practice
+  </footer>
+</div>
+

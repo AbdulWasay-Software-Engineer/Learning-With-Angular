@@ -1,0 +1,144 @@
+
+/* Main Background */
+:host {
+    display: block;
+    min-height: 100vh;
+    padding: 30px 15px;
+    box-sizing: content-box;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Main Container */
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Div 1 */
+#div1 {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+#div1 h1 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 20px 0;
+    color: #334155;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Number Inputs */
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin-top: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 9px;
+    outline: none;
+    background: #f8fafc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+    background: white;
+}
+
+/* Comparison Result */
+.div2 {
+    margin-top: 18px;
+    padding: 17px;
+    background: #ecfdf5;
+    color: #047857;
+    border-left: 5px solid #10b981;
+    border-radius: 9px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* City Paragraph */
+p {
+    margin-top: 25px;
+    padding: 12px 15px;
+    background: #eef2ff;
+    color: #4338ca;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* City List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    padding: 13px 18px;
+    margin: 10px 0;
+    background: #f1f5f9;
+    border-left: 4px solid #6366f1;
+    border-radius: 7px;
+    color: #334155;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #e0e7ff;
+    transform: translateX(6px);
+    color: #4338ca;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    button {
+        padding: 11px 17px;
+        font-size: 14px;
+    }
+}

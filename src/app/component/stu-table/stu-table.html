@@ -1,0 +1,71 @@
+
+<div class="container mt-4">
+
+    <div class="table-card">
+
+        <div class="header">
+            <h1>Student Records</h1>
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>City</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr *ngFor="let student of studentList">
+
+                        <td>
+                            <span class="id-badge">
+                                {{student.id}}
+                            </span>
+                        </td>
+
+                        <td class="student-name">
+                            {{student.name}}
+                        </td>
+
+                        <td>
+                            <span class="city-badge">
+                                {{student.city}}
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <span class="status active"
+                                  *ngIf="student.isactive">
+                                Active
+                            </span>
+
+                            <span class="status inactive"
+                                  *ngIf="!student.isactive">
+                                Inactive
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="footer">
+            Total Students: {{studentList.length}}
+        </div>
+
+    </div>
+
+</div>

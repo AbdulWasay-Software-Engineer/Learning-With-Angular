@@ -1,0 +1,358 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #172033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.binding-page {
+  min-height: 100vh;
+  padding: 55px 7%;
+  background: linear-gradient(135deg, #f0f4ff, #f8faff 55%, #eef2ff);
+}
+
+.page-header {
+  text-align: center;
+  margin: 0 auto 45px;
+  max-width: 700px;
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.page-header h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #172554;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.binding-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.binding-card {
+  min-width: 0;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e5eaf5;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(30, 41, 90, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.binding-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(30, 41, 90, 0.12);
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.binding-card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 750;
+  color: #172554;
+}
+
+.description {
+  margin: 0 0 25px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
+  outline: none;
+  background: #f8faff;
+  color: #3730a3;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.course-result {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #e0e7ff;
+  border-radius: 14px;
+  background: #f5f7ff;
+}
+
+.course-result span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.course-result h4 {
+  margin: 8px 0 0;
+  color: #4338ca;
+  font-size: 20px;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 180px;
+  margin-top: 22px;
+  padding: 12px;
+  overflow: hidden;
+  background: #f1f5f9;
+  border-radius: 16px;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.property-image {
+  min-height: 260px;
+}
+
+.course-text {
+  margin: 18px 0 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.course-text strong {
+  color: #4338ca;
+}
+
+.code-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 13px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: #475569;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.event-card {
+  grid-column: 1 / -1;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  color: white;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.2);
+}
+
+.btn-primary:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  color: #4338ca;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+}
+
+.btn-secondary:hover {
+  background: #e0e7ff;
+  transform: translateY(-2px);
+}
+
+.page-footer {
+  margin-top: 45px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.page-footer span {
+  color: #ef4444;
+}
+
+@media (max-width: 700px) {
+  .binding-page {
+    padding: 35px 18px;
+  }
+
+  .binding-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .binding-card {
+    padding: 22px;
+  }
+
+  .event-card {
+    grid-column: auto;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+.binding-card {
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    font-family: Arial, sans-serif;
+}
+
+.binding-card h4 {
+    margin: 0 0 25px;
+    padding-bottom: 14px;
+    color: #2563eb;
+    font-size: 22px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.binding-card label {
+    display: block;
+    margin-bottom: 9px;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.binding-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.binding-card input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.preview {
+    margin-top: 22px;
+    padding: 18px;
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.preview span {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.preview h3 {
+    margin: 10px 0 0;
+    color: #1e3a8a;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .binding-card {
+        margin: 16px;
+        padding: 20px;
+    }
+
+    .binding-card h4 {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,47 @@
+
+<div class="container">
+
+    <div id="div1" *ngIf="isdiv1Visible">
+        <h1>Div 1</h1>
+    </div>
+
+    <button (click)="showdiv1()">Show Div</button>
+    <button (click)="hidediv1()">Hide Div</button>
+
+    <br><br>
+
+    <label>
+        Enter First Number
+        <input type="number" [(ngModel)]="num1">
+    </label>
+
+    <br>
+
+    <label>
+        Enter Second Number
+        <input type="number" [(ngModel)]="num2">
+    </label>
+
+    <br>
+
+    <div class="div2" *ngIf="num1 > num2">
+        {{num1}} is greater than {{num2}}
+    </div>
+
+    <div class="div2" *ngIf="num1 <= num2">
+        {{num1}} is less than or equal to {{num2}}
+    </div>
+
+
+<p *ngFor="let city of cities">
+    The City is {{city}}
+</p>
+
+<ul>
+    <li *ngFor="let city of cities">
+        {{city}}
+    </li>
+</ul>
+
+
+</div>
