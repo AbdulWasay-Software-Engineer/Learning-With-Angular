@@ -20,6 +20,8 @@ export class Structuraldirectives {
     'Peshawar',
     'Quetta'
 ];
+currentsamester : string = "HDSE-II";
+samesterArray : string[] = ['CPISM','DISM','HDSE-I','HDSE-II','ADSE-I','ADSE-II']
 
 
 

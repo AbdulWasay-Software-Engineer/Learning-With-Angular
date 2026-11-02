@@ -42,6 +42,22 @@
         {{city}}
     </li>
 </ul>
+<label>
+    Select Your Semester
+    <select [(ngModel)]="currentsamester">
+        <option *ngFor="let sem of samesterArray" [value]="sem">
+            {{sem}}
+        </option>
+    </select>
+</label>
 
-
+<div [ngSwitch]="currentsamester">
+    <p *ngSwitchCase="'CPISM'">You will learn: Web Designing</p>
+    <p *ngSwitchCase="'DISM'">You will learn: Development with PHP/MYSQL</p>
+    <p *ngSwitchCase="'HDSE-I'">You will learn: Development with ASP.NET/SQL SERVER</p>
+    <p *ngSwitchCase="'HDSE-II'">You will learn: Development with MERN</p>
+    <p *ngSwitchCase="'ADSE-I'">You will learn: Development with FLUTTER/DART</p>
+    <p *ngSwitchCase="'ADSE-II'">You will learn: Development with DATA SCIENCE/AI</p>
+    <p *ngSwitchDefault>You will learn: Web Designing</p>
+</div>
 </div>

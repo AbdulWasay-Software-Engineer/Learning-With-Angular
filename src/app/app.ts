@@ -5,9 +5,10 @@ import { Employeelist } from './component/employeelist/employeelist';
 import { Databinding } from './component/databinding/databinding';
 import { Structuraldirectives } from './component/structuraldirectives/structuraldirectives';
 import { StuTable } from './component/stu-table/stu-table';
+import { AttributeDirectives } from './component/attribute-directives/attribute-directives';
 
 @Component({
-  imports: [RouterOutlet , Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable],
+  imports: [RouterOutlet , Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable , AttributeDirectives],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
