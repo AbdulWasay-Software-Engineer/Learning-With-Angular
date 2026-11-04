@@ -1,10 +1,11 @@
 
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+    imports: [CommonModule,FormsModule],
   selector: 'app-attribute-directives',
-  imports: [CommonModule],
   templateUrl: './attribute-directives.html',
   styleUrl: './attribute-directives.css'
 })
@@ -31,5 +32,7 @@ export class AttributeDirectives {
     }
 
   }
+  num1 : number = 15
+  num2 : number = 10
 
 }

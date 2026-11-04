@@ -5,6 +5,7 @@
 
         <div class="header">
             <h1>Student Records</h1>
+            <p>Student Information Dashboard</p>
         </div>
 
         <div class="table-responsive">
@@ -17,6 +18,7 @@
                         <th>Student Name</th>
                         <th>City</th>
                         <th>Status</th>
+                        <th>Percentage</th>
                     </tr>
                 </thead>
 
@@ -40,18 +42,37 @@
                             </span>
                         </td>
 
-                        <td>
+                        <td [ngStyle]="{
+                            'background-color': student.isactive ? '#dcfce7' : '#fee2e2'
+                        }">
 
-                            <span class="status active"
-                                  *ngIf="student.isactive">
+                            <span class="status active" *ngIf="student.isactive">
                                 Active
                             </span>
 
-                            <span class="status inactive"
-                                  *ngIf="!student.isactive">
+                            <span class="status inactive" *ngIf="!student.isactive">
                                 Inactive
                             </span>
 
+                        </td>
+
+                        <td>
+                            <div class="progress-container">
+
+                                <div class="progress-bar"
+                                     [ngStyle]="{
+                                        'width': student.percentage + '%',
+                                        'background-color': student.percentage >= 80 ? '#16a34a' :
+                                                            student.percentage >= 50 ? '#f59e0b' : '#dc2626'
+            
+                                     }">
+                                </div>
+
+                            </div>
+
+                            <span class="percentage">
+                                {{student.percentage}}%
+                            </span>
                         </td>
 
                     </tr>

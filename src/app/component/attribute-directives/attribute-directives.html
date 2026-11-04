@@ -1,29 +1,29 @@
-
 <div class="container">
 
     <h3>Attribute Directive</h3>
 
-    <div id="div1" [ngClass]="div1BgColor">
+    <div id="div1" [ngClass]="div1BgColor" class="color-box">
         <h2>Div 1</h2>
         <p>Change My Background Color!</p>
     </div>
 
     <div class="button-group">
-
-        <button class="btn-blue" (click)="makeBlue()">
-            Make Blue
-        </button>
-
-        <button class="btn-red" (click)="makeRed()">
-            Make Red
-        </button>
-
-        <button class="btn-toggle" (click)="toggleColor()">
-            Toggle Color
-        </button>
-
+        <button class="btn-blue" (click)="makeBlue()">Make Blue</button>
+        <button class="btn-red" (click)="makeRed()">Make Red</button>
+        <button class="btn-toggle" (click)="toggleColor()">Toggle Color</button>
     </div>
 
+    <div class="comparison-box"
+         [ngClass]="num1 > num2 ? 'bg-primary' : 'bg-danger'">
+        <h2>{{ num1 > num2 ? 'First Number is Greater' : 'Second Number is Greater or Equal' }}</h2>
+    </div>
 
+    <div class="input-group">
+        <label>Enter First Number</label>
+        <input type="number" [(ngModel)]="num1" placeholder="Enter first number">
+
+        <label>Enter Second Number</label>
+        <input type="number" [(ngModel)]="num2" placeholder="Enter second number">
+    </div>
 
 </div>

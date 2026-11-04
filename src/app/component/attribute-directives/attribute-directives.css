@@ -1,178 +1,116 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-/* Main Container */
-
 .container {
     max-width: 750px;
     margin: 40px auto;
-    padding: 40px;
-    background: rgba(255,255,255,0.97);
-    border-radius: 22px;
-    box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+    font-family: Arial, sans-serif;
 }
-
-/* Heading */
 
 h3 {
     text-align: center;
+    color: #273c75;
     font-size: 28px;
-    font-weight: 800;
-    color: white;
-    padding: 22px;
-    margin-bottom: 35px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #2563eb, #9333ea);
-    box-shadow: 0 10px 25px rgba(99,102,241,0.3);
+    margin-bottom: 25px;
 }
 
-/* Main Div */
-
-#div1 {
-    min-height: 230px;
-    padding: 55px 20px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.color-box {
+    padding: 30px;
     text-align: center;
-    transition: all 0.5s ease;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    background: #e9ecef;
+    color: #222;
+    transition: 0.3s ease;
 }
 
-#div1 h2 {
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 10px;
+.color-box h2 {
+    margin: 0 0 10px;
 }
-
-#div1 p {
-    font-size: 15px;
-    opacity: 0.9;
-}
-
-/* Blue Background */
-
-.bg-primary {
-    background: linear-gradient(135deg, #2563eb, #06b6d4);
-}
-
-/* Red Background */
-
-.bg-danger {
-    background: linear-gradient(135deg, #dc2626, #f43f5e);
-}
-
-/* Buttons Group */
 
 .button-group {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px 0;
 }
 
-/* Common Button */
-
 button {
-    padding: 14px 25px;
+    padding: 12px 22px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 button:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    opacity: 0.85;
 }
-
-button:active {
-    transform: scale(0.95);
-}
-
-/* Blue Button */
 
 .btn-blue {
-    background: linear-gradient(135deg, #2563eb, #06b6d4);
-    box-shadow: 0 6px 18px rgba(37,99,235,0.3);
+    background: #2563eb;
 }
-
-/* Red Button */
 
 .btn-red {
-    background: linear-gradient(135deg, #dc2626, #f43f5e);
-    box-shadow: 0 6px 18px rgba(220,38,38,0.3);
+    background: #dc2626;
 }
-
-/* Toggle Button */
 
 .btn-toggle {
-    background: linear-gradient(135deg, #7c3aed, #9333ea);
-    box-shadow: 0 6px 18px rgba(124,58,237,0.3);
+    background: #7c3aed;
 }
 
-/* Button Hover */
-
-.btn-blue:hover {
-    box-shadow: 0 10px 25px rgba(37,99,235,0.5);
-}
-
-.btn-red:hover {
-    box-shadow: 0 10px 25px rgba(220,38,38,0.5);
-}
-
-.btn-toggle:hover {
-    box-shadow: 0 10px 25px rgba(124,58,237,0.5);
-}
-
-/* Status */
-
-.status {
-    margin-top: 30px;
-    padding: 18px;
-    background: #f1f5f9;
-    border-radius: 12px;
+.comparison-box {
+    padding: 25px;
     text-align: center;
-    color: #475569;
-    font-size: 15px;
-    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+    margin: 20px 0;
+    transition: 0.3s;
 }
 
-.status span {
-    color: #4f46e5;
-    font-weight: 800;
+.bg-primary {
+    background: #2563eb;
 }
 
-/* Responsive */
+.bg-danger {
+    background: #dc2626;
+}
 
-@media(max-width: 600px) {
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
 
+.input-group label {
+    font-weight: bold;
+    color: #334155;
+}
+
+.input-group input {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 600px) {
     .container {
-        padding: 22px;
-        margin: 15px auto;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    #div1 h2 {
-        font-size: 28px;
+        margin: 15px;
+        padding: 20px;
     }
 
     .button-group {
@@ -182,5 +120,4 @@ button:active {
     button {
         width: 100%;
     }
-
 }
