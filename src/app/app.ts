@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Addemployee } from './component/addemployee/addemployee';
 import { Employeelist } from './component/employeelist/employeelist';
 import { Databinding } from './component/databinding/databinding';
@@ -8,7 +8,7 @@ import { StuTable } from './component/stu-table/stu-table';
 import { AttributeDirectives } from './component/attribute-directives/attribute-directives';
 
 @Component({
-  imports: [RouterOutlet , Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable , AttributeDirectives],
+  imports: [RouterOutlet ,RouterLink, Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable , AttributeDirectives],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

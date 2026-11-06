@@ -1,13 +1,31 @@
-<!-- <app-addemployee></app-addemployee>
 
-<app-employeelist></app-employeelist> -->
+<nav class="custom-navbar">
 
-<!-- <app-databinding></app-databinding> -->
+  <a class="navbar-brand" routerLink="">
+    <span class="brand-icon">M</span>
+    My Website
+  </a>
 
-<!-- <app-structuraldirectives></app-structuraldirectives> -->
+  <ul class="navbar-nav">
 
-<!-- <app-attribute-directives></app-attribute-directives> -->
+    <li><a class="nav-link" routerLink="">Home</a></li>
 
-<!-- <app-stu-table></app-stu-table> -->
+    <li><a class="nav-link" routerLink="add-emp">Add Employee</a></li>
 
-<router-outlet></router-outlet>
+    <li><a class="nav-link" routerLink="emp-list">Employees</a></li>
+
+    <li><a class="nav-link" routerLink="data-bind">Data Binding</a></li>
+
+    <li><a class="nav-link" routerLink="struct-dir">Structural Directives</a></li>
+
+    <li><a class="nav-link" routerLink="attri-dir">Attribute Directives</a></li>
+
+    <li><a class="nav-link" routerLink="stu-table">Students Table</a></li>
+
+  </ul>
+
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

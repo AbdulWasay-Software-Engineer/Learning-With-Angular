@@ -5,10 +5,15 @@ import { Databinding } from './component/databinding/databinding';
 import { Employeelist } from './component/employeelist/employeelist';
 import { Structuraldirectives } from './component/structuraldirectives/structuraldirectives';
 import { StuTable } from './component/stu-table/stu-table';
+import { Home } from './component/home/home';
 
 export const routes: Routes = [
     {
         path : '',
+        component : Home
+    },
+    {
+        path : 'add-emp',
         component : Addemployee
     },
     {
