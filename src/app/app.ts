@@ -6,9 +6,10 @@ import { Databinding } from './component/databinding/databinding';
 import { Structuraldirectives } from './component/structuraldirectives/structuraldirectives';
 import { StuTable } from './component/stu-table/stu-table';
 import { AttributeDirectives } from './component/attribute-directives/attribute-directives';
+import { Navbar } from './component/navbar/navbar';
 
 @Component({
-  imports: [RouterOutlet ,RouterLink, Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable , AttributeDirectives],
+  imports: [RouterOutlet , RouterLink , Navbar, Addemployee , Employeelist , Databinding , Structuraldirectives , StuTable , AttributeDirectives],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
